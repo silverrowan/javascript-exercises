@@ -1,9 +1,15 @@
 const fibonacci = function(position) {
     const fibonacciArray = [1,1];
-    for (i = 2; i < position; i++) {
-        fibonacciArray.push(fibonacciArray[i - 1] + fibonacciArray[i -2]);
+    if (position == 0) {
+        return 0;
+    } else if (position < 0) {
+        return "OOPS";
+    } else {
+        for (i = 2; i < position; i++) {
+            fibonacciArray.push(fibonacciArray[i - 1] + fibonacciArray[i -2]);
+        };
+        return fibonacciArray[position - 1];
     };
-    return fibonacciArray[position - 1];
 };
 
 // Do not edit below this line
@@ -17,6 +23,11 @@ sequence 1,1,2,3 etc (member '4' is 3)
 
 step one: make an array of fibonacci sequence of length = given number
 Create Array (fibonacciSequence) with 1,1 as first two values
+
+IF position = 0 then return 0
+ELSE IF position < 0 then return "OOPS"
+ELSE
+
 FOR 
     starting with i = 2
     while i is less than position
