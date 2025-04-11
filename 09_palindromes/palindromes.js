@@ -1,5 +1,8 @@
 const palindromes = function (string) {
-    stringModified = string.trim().toLowerCase().replaceAll((/\W/g || " "), "");
+    //convert to lowercase and remove non-word characters and spaces. 
+    stringModified = string.toLowerCase().replaceAll((/\W/g || " "), "");
+
+    //reverse the modified/cleaned string
     reverseString = Array.from(stringModified).toReversed().join("");      
     return (reverseString == stringModified);
 };
