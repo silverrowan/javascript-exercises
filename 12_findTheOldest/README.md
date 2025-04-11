@@ -8,3 +8,4 @@ Now that you've reached the final exercise, you should be fairly comfortable get
 - You should return the whole person object, but the tests mostly just check to make sure the name is correct.
 - There are many ways of doing this using built-in array methods like `reduce`, or even chaining multiple! 
 - One of the tests checks for people with no death-date.. use JavaScript's Date function to get their age as of today.
+   .
